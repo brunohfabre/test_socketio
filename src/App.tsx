@@ -4,8 +4,8 @@ import { io } from 'socket.io-client';
 //http://sia-nginx-hml.atmoutsourcing.com.br:4000
 //https://sia-nginx-hml.atmoutsourcing.com.br/backend
 
-const socket = io('http://sia-nginx-hml.atmoutsourcing.com.br:4000', {
-  secure: false
+const socket = io('https://sia-nginx-mobile.atmoutsourcing.com.br', {
+  path: '/backend/socket.io'
 });
 
 socket.on('connect', () => {
